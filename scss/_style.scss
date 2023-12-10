@@ -1,0 +1,34 @@
+header{
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:150px;
+        margin-left: 90px;
+        margin-right: 90px;
+
+        .logo > img{
+            width: 100px;
+            height: 90px;
+        }
+        .menu > ul{
+            display: flex;
+            gap:70px;
+            li{
+                padding-bottom: 5px;
+                font-size: 20px;
+                font-family: $myfont;
+                @include menufont;
+                .search{
+                    width:23px;
+                    height: 20px; 
+                }
+            }
+            li:hover{
+                border-bottom: 2px solid #33B815;
+                cursor: pointer;
+            }
+         }
+
+    }
+}
