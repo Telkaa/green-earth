@@ -58,6 +58,7 @@ table {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 header nav {
@@ -68,16 +69,33 @@ header nav {
   margin-left: 90px;
   margin-right: 90px;
 }
+@media (max-width: 805px) {
+  header nav {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
 header nav .logo > img {
   width: 100px;
   height: 90px;
+}
+@media (max-width: 720px) {
+  header nav .logo > img {
+    width: 70px;
+    height: 60px;
+  }
 }
 header nav .menu > ul {
   display: flex;
   gap: 70px;
 }
+@media (max-width: 1060px) {
+  header nav .menu > ul {
+    gap: 40px;
+  }
+}
 header nav .menu > ul li {
-  padding-bottom: 5px;
+  padding-bottom: 7px;
   font-size: 20px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -88,7 +106,32 @@ header nav .menu > ul li .search {
   width: 23px;
   height: 20px;
 }
+@media (max-width: 900px) {
+  header nav .menu > ul li {
+    font-size: 15px;
+  }
+}
+@media (max-width: 710px) {
+  header nav .menu > ul li {
+    display: none;
+  }
+}
+header nav .menu > ul .bar {
+  display: none;
+}
+@media (max-width: 710px) {
+  header nav .menu > ul .bar {
+    display: flex;
+  }
+}
 header nav .menu > ul li:hover {
   border-bottom: 2px solid #33B815;
   cursor: pointer;
+}
+header nav .menu > ul #underlined {
+  border-bottom: 2px solid black;
+  padding-bottom: 7px;
+}
+header nav .menu > ul #underlined:hover {
+  border-bottom: 2px solid black;
 }/*# sourceMappingURL=global.css.map */

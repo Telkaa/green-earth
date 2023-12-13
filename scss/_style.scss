@@ -6,16 +6,33 @@ header{
         height:150px;
         margin-left: 90px;
         margin-right: 90px;
+        @media(max-width:805px){
+            margin-left: 50px;
+            margin-right: 50px;
+        }
 
         .logo > img{
             width: 100px;
             height: 90px;
+            @media(max-width:720px){
+                width:70px;
+                height: 60px;
+            }
         }
+
         .menu > ul{
             display: flex;
             gap:70px;
+            @media(max-width:1060px){
+               gap:40px; 
+            }
+            @media(max-width:700px){
+                
+            }
+
+ 
             li{
-                padding-bottom: 5px;
+                padding-bottom: 7px;
                 font-size: 20px;
                 font-family: $myfont;
                 @include menufont;
@@ -23,10 +40,31 @@ header{
                     width:23px;
                     height: 20px; 
                 }
+                @media(max-width:900px){
+                    font-size:15px;
+                }
+
+                @media(max-width:710px){
+                   display:none;
+
+                }   
+            }
+            .bar{
+                display: none;
+                @media(max-width: 710px){
+                    display: flex;
+                }
             }
             li:hover{
                 border-bottom: 2px solid #33B815;
                 cursor: pointer;
+            }
+            #underlined{
+                border-bottom: 2px solid black;
+                padding-bottom: 7px;
+            }
+            #underlined:hover{
+                border-bottom: 2px solid black;
             }
          }
 
