@@ -8,7 +8,6 @@ header{
             margin-left: 50px;
             margin-right: 50px;
         }
-
         .logo > img{
             width: 100px;
             height: 90px;
@@ -17,8 +16,7 @@ header{
                 height: 60px;
             }
         }
-
-        .menu > ul{
+         .menu > ul{
             display: flex;
             gap:70px;
             @media(max-width:1060px){
@@ -28,7 +26,6 @@ header{
                 
             }
 
- 
             li{
                 padding-bottom: 7px;
                 font-size: 20px;
@@ -88,25 +85,57 @@ header{
 }
 }
 .s-2{
-    margin-top: 100px;
+    margin-top: 60px;
     .s2-header{
         font-size: 32px;
         font-family:$myfont;
-        margin-left:40%;
+        margin: auto;
+        width:300px;
+        @media(max-width:630px){
+            font-size: 22px;
+            width:200px;
+        }
     }
     .s2-div{
         display: flex;
         justify-content: space-evenly;
-        margin-top: 30px;
+        margin-top: 40px;
+        @media(max-width:630px){
+            flex-direction: column;
+            height:600px;
+            align-items: center;
+            margin-top: 0;
+        }
         .flex-imgs{
-            width: 390px;
+            max-width: 390px;
             height: 310px;
+            @media (max-width:1330px) {
+                width: 260px;
+                height: 200px;
+            }
+            @media(max-width:830px){
+                width:200px;
+                height: 130px;
+            }
+            @media(max-width:630px){
+                width:80%;
+                height:140px;
+            }
+
             .div-img{
                 width:100%;
                 height: 100%;
+                @media(max-width:630px){
+                    object-fit: cover;
+                }
             }
             .s2-div-p{
                 font-size: 24px;
+                font-family: $myfont;
+                padding-top:10px;
+                @media(max-width:1330px){
+                    font-size: 14px;
+                }
             }
         }
     }
