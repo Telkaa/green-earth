@@ -1,8 +1,6 @@
 header{
     nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include navflex;
         height:150px;
         margin-left: 90px;
         margin-right: 90px;
@@ -60,13 +58,56 @@ header{
                 cursor: pointer;
             }
             #underlined{
-                border-bottom: 2px solid black;
+                border-bottom: $liborder;
                 padding-bottom: 7px;
             }
             #underlined:hover{
-                border-bottom: 2px solid black;
+                border-bottom: $liborder;
             }
          }
 
+    }
+}
+.s-1{
+.back-img{
+    background-image: url(../images/Earth_forest.jpg);
+    height: 450px;
+    width:100%;
+    object-fit: cover;
+    background-size: cover;
+    @include myflex;
+    padding: 50px;
+    .back-img-p{
+        color:$divp_color;
+        font-size: 55px;
+        font-family: $myfont;
+        @media(max-width:700px){
+            font-size:35px;
+        }
+    }
+}
+}
+.s-2{
+    margin-top: 100px;
+    .s2-header{
+        font-size: 32px;
+        font-family:$myfont;
+        margin-left:40%;
+    }
+    .s2-div{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        .flex-imgs{
+            width: 390px;
+            height: 310px;
+            .div-img{
+                width:100%;
+                height: 100%;
+            }
+            .s2-div-p{
+                font-size: 24px;
+            }
+        }
     }
 }

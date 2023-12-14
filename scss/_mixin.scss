@@ -3,3 +3,13 @@
     font-weight: 600;
     line-height: 16px;
 }
+@mixin myflex{
+    display: flex;
+    justify-content: flex-start;
+    align-items:start;
+}
+@mixin navflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
