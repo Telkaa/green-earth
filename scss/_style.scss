@@ -193,6 +193,9 @@ header{
                 background-color: $colorgreen;
                 color: $divp_color;
                 cursor: pointer;
+                @media(max-width:650px){
+                    margin-bottom:20px;
+                }
             }
             #Submit:hover{
                 background-color: #FFFF;

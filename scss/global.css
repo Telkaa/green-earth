@@ -287,6 +287,11 @@ header nav .menu > ul #underlined:hover {
   color: #D3EADE;
   cursor: pointer;
 }
+@media (max-width: 650px) {
+  .s-3 .Main .input-sec #Submit {
+    margin-bottom: 20px;
+  }
+}
 .s-3 .Main .input-sec #Submit:hover {
   background-color: white;
   border: 2px solid #309852;
