@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green earth</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./scss/global.css">
     <link rel="icon" type="mage/x-icon" href="./icons/planet-earth.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +38,7 @@
                     <li>
                         <img src="./icons/magnifying-glass-solid.svg"  alt="search" class="search">
                     </li>
-                    <li class="bar"><img src="./icons/bars-solid.svg"></li>
+                    <div class="bar"><img src="./icons/bars-solid.svg"></div>
                 </ul>
             </div>
         </nav>
@@ -74,8 +72,27 @@
 
     <section class="s-3">
         <div class="Main">
-            <div class="forms-div"></div>
-            <div class="dorms-div"></div>
+            <div class="forms-div  back-div">
+                <h3 class="forms-p">Stay up to date with<br>Green Earth's news</h3>
+
+                <div class="icon-div">
+                    <img src="./icons/clock.png" class="clock">
+                    <p>Available on 24/7 on any device</p>
+                </div>
+
+                <div class="icon-div">
+                    <img src="./icons/check.png" class="clock">
+                    <p> We provide100% reliable information</p>
+                </div>
+            </div>
+
+            <div class="forms-div input-sec">
+                <h3 class="input-h3">News letter</h3>
+                <input type="text" id="Name" placeholder="Name" class="inputs">
+                <input type="text" id="Last_name" placeholder="Last name" class="inputs">
+                <input type="email" id="Email_addres" placeholder="Email" class="inputs">
+                <button id="Submit" class="inputs">subscribe</button>
+            </div>
         </div>
     </section>
 
