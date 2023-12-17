@@ -13,3 +13,8 @@
     justify-content: space-between;
     align-items: center;
 }
+@mixin formsflex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
