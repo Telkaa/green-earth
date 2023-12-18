@@ -190,7 +190,7 @@ header nav .menu > ul #underlined:hover {
 }
 .s-2 .s2-div .flex-imgs {
   max-width: 390px;
-  height: 340px;
+  height: 320px;
 }
 @media (max-width: 1330px) {
   .s-2 .s2-div .flex-imgs {
@@ -233,14 +233,10 @@ header nav .menu > ul #underlined:hover {
     font-size: 14px;
   }
 }
-.s-2 .s2-div .flex-imgs .button {
-  background-color: #309852;
-  color: white;
-  border-radius: 7px;
-  height: 30px;
-  max-width: 140px;
-  width: 100%;
-  border: none;
+@media (max-width: 600px) {
+  .s-2 .s2-div .flex-imgs .s2-div-p {
+    font-size: 12px;
+  }
 }
 .s-2 .s2-div .flex-imgs:hover {
   transform: scale(1.1);
@@ -435,4 +431,13 @@ footer .Main-foot .ig-icons .web-ig:hover {
 footer .Main-foot .ig-icons .icons {
   display: flex;
   gap: 15px;
+}
+
+.sec-one .back-image {
+  background-image: url(../);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
 }/*# sourceMappingURL=global.css.map */

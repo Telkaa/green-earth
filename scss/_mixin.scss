@@ -18,3 +18,14 @@
     flex-direction: column;
     align-items: center;
 }
+@mixin back-p{
+    color:$divp_color;
+    font-size: 55px;
+    font-family: $myfont;
+}
+@mixin formsp{
+    font-size: 30px;
+    color:$divp_color;
+    font-family: $myfont;
+    line-height: 45px;
+}
