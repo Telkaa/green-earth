@@ -240,12 +240,7 @@ footer{
     width:100%;
     height: 220px;
     .Main-foot{
-        display: flex;
-        align-items: center;
-        gap:90px;
-        padding-left: 90px;
-        padding-right: 90px;
-        padding-top: 50px;
+        @include footer_style;
         @media(max-width:775px){
             gap:50px;
         }
@@ -314,13 +309,101 @@ footer{
 }
 .sec-one{
     .back-image{
-        background-image: url(../);
+        background-image: url(../images/spring-foto.jpg);
         object-fit: cover;
         background-size: cover;
         width: 100%;
-        height: 250px;
+        height: 275px;
+        @include center;
+        font-family: $myfont;
+        gap: 10px;
         .About-us{
-
+            color:$colorwhite;
+            font-size: 55px;
+            @media(max-width:900px){
+                color:rgb(186, 173, 173);
+                font-size: 40px;
+            }
+        }
+        .slogan{
+            color:$divp_color;
+            font-size: 22px;
+            @media(max-width:900px){
+                color:rgb(186, 173, 173);
+            }
+        }
+    }
+}
+.sec-two{
+    .main-pdiv{
+        margin-top: 40px;
+        display: flex;
+        gap:35px;
+        justify-content: center;
+        @media(max-width:870px){
+               gap:23px;
+               margin-left: 10px;
+               margin-right: 10px;     
+        }
+        .two-articles{
+            width: 580px;
+            line-height: 30px;
+            @media(max-width:870px){
+                width:500px;
+                line-height: 25px;
+            }
+            .article-h{
+                font-size: 30px;
+                margin-bottom: 10px;
+                @media(max-width:500px){
+                    font-size: 26px;
+                }
+            }
+            .quote{
+                color:rgb(66, 64, 64);
+                font-family: 'Sevillana', cursive; 
+                font-size: 23px;
+            }
+            .article-p{
+                font-size: 24px;
+                @media(max-width:870px){
+                    font-size: 19px;
+                }
+                @media(max-width:455px){
+                    font-size: 17px;
+                }
+            }
+            .our-mission{
+                @media(max-width:390px){
+                    display: none;
+                }
+            }
+            .line-div{
+                display: flex;
+                justify-content: flex-end;
+                .line{
+                    width:200px;
+                    height:3px;
+                    background-color:grey;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    @media(max-width:870px){
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        .vertical-line{
+            display: flex;
+            align-items: end;
+            @media(max-width:455px){
+                   display: none; 
+            }
+            .v-line{
+                width:3px;
+                height:220px;
+                background-color: gray;
+            }
         }
     }
 }
