@@ -686,6 +686,23 @@ footer{
             width: 90vw;
             height: 180px;  
         }
+        @media(max-width:505px){
+            gap: 17px;
+        }
+        @media(max-width:435px){
+            margin-left: 23px;
+        }
+        @media(max-width:375px){
+            margin-left: 17px;
+        }
+        @media(max-width:375px){
+            gap:15px;
+            padding-top:16px;
+        }
+        @media(max-width:325px){
+            gap: 11px;
+            padding-top: 12px;
+        }
         .news-img{
             max-width: 300px;
             width: 100%;
@@ -705,6 +722,20 @@ footer{
                  width: 215px;
                  height: 130px; 
             }
+            @media(max-width:570px){
+                width:170px;   
+            }
+            @media(max-width:505px){
+                width: 145px;
+            }
+            @media(max-width:455px){
+                width:120px;
+                height: 115px;
+            }
+            @media(max-width:325px){
+                width: 100px;
+                height:100px;
+            }
         }
         .news-texts{
             display: flex;
@@ -713,9 +744,15 @@ footer{
             @media(max-width:715px){
                 gap:13px;
             }
+            @media(max-width:425px){
+                gap:9px;
+            }
             .Date{
                 font-size: 19px;
                 color:grey;
+                @media(max-width:425px){
+                    font-size: 15px;
+                }
             }
             .text-h{
                 font-size: 40px;
@@ -730,6 +767,12 @@ footer{
                 @media(max-width:805px){
                     font-size: 19px;
                 }
+                @media(max-width:570px){
+                    font-size: 16px;
+                }
+                @media(max-width:325px){
+                    font-size: 14px;
+                }
             }
             .text-h:hover{
                 text-decoration:2.5px underline;
@@ -739,6 +782,9 @@ footer{
                 color: rgb(41, 40, 40);
                 @media(max-width:925px){
                     font-size: 17px;
+                }
+                @media(max-width:570px){
+                    font-size: 14px;
                 }
             }
         }
