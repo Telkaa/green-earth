@@ -43,3 +43,10 @@
     padding-right: 90px;
     padding-top: 50px;
 }
+@mixin inputflex{
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    vertical-align: center;
+    background-position-y: center;
+    background-position-x: 15px;
+}
