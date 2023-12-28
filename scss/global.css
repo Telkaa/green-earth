@@ -246,6 +246,11 @@ header nav .menu > ul #bar-icon {
     font-weight: bold;
   }
 }
+@media (max-width: 355px) {
+  .s-2 .s2-div .flex-imgs .s2-div-p {
+    padding-top: 3.5px;
+  }
+}
 .s-2 .s2-div .flex-imgs:hover {
   transform: scale(1.1);
   transition: 0.3s;
@@ -281,7 +286,7 @@ header nav .menu > ul #bar-icon {
 .s-3 .Main .input-sec .inputs {
   max-width: 340px;
   width: 100%;
-  height: 60px;
+  height: 55px;
   font-size: 20px;
   padding: 8px;
   border: none;
@@ -303,7 +308,7 @@ header nav .menu > ul #bar-icon {
   color: #D3EADE;
   cursor: pointer;
 }
-@media (max-width: 650px) {
+@media (max-width: 730px) {
   .s-3 .Main .input-sec #Submit {
     margin-bottom: 20px;
   }
@@ -320,7 +325,7 @@ header nav .menu > ul #bar-icon {
   width: 100%;
   height: 410px;
 }
-@media (max-width: 650px) {
+@media (max-width: 730px) {
   .s-3 .Main .back-div {
     display: none;
   }
