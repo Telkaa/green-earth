@@ -135,6 +135,12 @@ header nav .menu > ul #underlined {
 header nav .menu > ul #underlined:hover {
   border-bottom: 2px solid black;
 }
+header nav .menu > ul #search-icon:hover {
+  border-bottom: none;
+}
+header nav .menu > ul #bar-icon {
+  border-bottom: none;
+}
 
 .s-1 .back-img {
   background-image: url(../images/Earth_forest.jpg);
@@ -791,7 +797,7 @@ footer .Main-foot .ig-icons .icons {
   box-shadow: 0px 15px 10px -15px #111;
 }
 .cont-sec .main-cont .cont-divs forms #send:hover {
-  border: 2px solid black;
+  border: 1px solid black;
 }
 .cont-sec .main-cont .cont-divs .cont-info {
   display: flex;
@@ -848,12 +854,69 @@ footer .Main-foot .ig-icons .icons {
   margin-bottom: 40px;
   font-weight: bolder;
 }
-.news-sec .news-header .news-h2 {
+@media (max-width: 570px) {
+  .news-sec .news-header .news-h1 {
+    font-size: 65px;
+  }
+}
+@media (max-width: 540px) {
+  .news-sec .news-header .news-h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 390px) {
+  .news-sec .news-header .news-h1 {
+    font-size: 43px;
+  }
+}
+.news-sec .news-header .news-h2div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 60px;
+}
+.news-sec .news-header .news-h2div .h2-line {
+  background-color: #828181;
+  width: 90%;
+  height: 2px;
+  align-items: baseline;
+}
+.news-sec .news-header .news-h2div .news-h2 {
   font-size: 39px;
+  position: absolute;
+  background-color: white;
+  padding: 0 30px;
   color: rgb(67, 50, 67);
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  margin-bottom: 19px;
+}
+@media (max-width: 540px) {
+  .news-sec .news-header .news-h2div .news-h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 485px) {
+  .news-sec .news-header .news-h2div .news-h2 {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 390px) {
+  .news-sec .news-header .news-h2div .news-h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 355px) {
+  .news-sec .news-header .news-h2div .news-h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 345px) {
+  .news-sec .news-header .news-h2div .news-h2 {
+    padding: 0 16px;
+  }
 }
 .news-sec .the_news {
   display: flex;
@@ -1032,7 +1095,7 @@ footer .Main-foot .ig-icons .icons {
 }
 .news-sec .the_news .news-texts .text-p {
   font-size: 20px;
-  color: rgb(41, 40, 40);
+  color: rgb(61, 61, 61);
 }
 @media (max-width: 925px) {
   .news-sec .the_news .news-texts .text-p {

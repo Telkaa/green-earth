@@ -62,6 +62,12 @@ header{
             #underlined:hover{
                 border-bottom: $liborder;
             }
+            #search-icon:hover{
+                border-bottom: none;
+            }
+            #bar-icon{
+                border-bottom: none;
+            }
          }
 
     }
@@ -595,7 +601,7 @@ footer{
                     box-shadow: 0px 15px 10px -15px #111;
                 }
                 #send:hover{
-                    border: 2px solid black;
+                    border: 1px solid black;
                 }
             }
             .cont-info{
@@ -648,13 +654,55 @@ footer{
             font-family: $myfont;
             margin-bottom: 40px;
             font-weight: bolder;
+            @media(max-width:570px){
+                font-size:65px;
+            }
+            @media(max-width:540px){
+                font-size: 50px;
+            }
+            @media(max-width:390px){
+                font-size: 43px;
+            }
         }
-        .news-h2{
-            font-size: 39px;
-            color:$news_h-color;
-            font-family: $myfont;
-            font-weight: bold;
-            margin-bottom: 19px;
+        .news-h2div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+            position: relative;
+            margin-bottom: 60px;
+            .h2-line{
+                background-color: #828181;
+                width: 90%;
+                height: 2px;
+                align-items: baseline;
+            }
+            .news-h2{
+                font-size: 39px;
+                position: absolute;
+                background-color: white;
+                padding: 0 30px;    
+                color:$news_h-color;
+                font-family: $myfont;
+                font-weight: bold;
+                @media(max-width:540px){
+                    font-size: 30px;
+                }
+                @media(max-width:485px){
+                    padding: 0 20px;
+                }
+                @media(max-width:390px){
+                    font-size: 24px;
+                }
+                @media(max-width:355px){
+                    font-size: 22px;
+                }
+                @media(max-width:345px){
+                    padding: 0 16px;
+                }
+                
+            }
         }
     }
     .the_news{
@@ -779,7 +827,7 @@ footer{
             }
             .text-p{
                 font-size: 20px;
-                color: rgb(41, 40, 40);
+                color: rgb(61, 61, 61);
                 @media(max-width:925px){
                     font-size: 17px;
                 }
