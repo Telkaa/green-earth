@@ -516,6 +516,7 @@ footer .Main-foot .ig-icons .icons {
 @media (max-width: 335px) {
   .sec-two .main-pdiv .two-articles {
     width: 200px;
+    margin-left: 35px;
   }
 }
 .sec-two .main-pdiv .two-articles .article-h {
