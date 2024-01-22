@@ -298,10 +298,9 @@ header nav .menu > ul #bar-icon {
   }
 }
 .s-3 .Main .input-sec #Submit {
-  border-radius: 15px;
-  max-width: 260px;
+  max-width: 340px;
   width: 100%;
-  height: 40px;
+  height: 45px;
   padding: 5px;
   margin-top: 10px;
   background-color: #309852;
@@ -311,6 +310,11 @@ header nav .menu > ul #bar-icon {
 @media (max-width: 730px) {
   .s-3 .Main .input-sec #Submit {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .s-3 .Main .input-sec #Submit {
+    width: 260px;
   }
 }
 .s-3 .Main .input-sec #Submit:hover {
